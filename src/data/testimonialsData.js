@@ -12,13 +12,13 @@ export const testimonialsData = [
   },
   {
     image: image2,
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsam, ab itaque nam perferendis impedit sint ',
+    review: 'Fitclub helped me stay motivated through the pandemic, I am glad I chose them ',
     name: 'JOHN KEVIN',
     status: 'COACH'
   },
   {
     image : image3,
-    review:' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur quod voluptatem',
+    review:' The plans were really easy to stick to, I am refreshed and ready to live healthy after coming to FitClub',
     name: 'FRANKLIN',
     status: "CUSTOMER"
   }

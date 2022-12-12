@@ -7,6 +7,7 @@ import Testimonial from './components/Testimonial/Testimonial';
 import Join from './components/Joinus/Join'
 import Footer from './components/Footer/Footer';
 
+
 function App() {
   return (
     <div className="App">
@@ -16,7 +17,7 @@ function App() {
         <Plans/>
         <Testimonial/>
         <Join/>
-        <Footer/>
+        <Footer/>   
     </div>
   );
 }

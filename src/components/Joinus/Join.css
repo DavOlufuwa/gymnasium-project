@@ -3,6 +3,9 @@
     padding: 0 2rem;
     gap: 15rem;
 }
+.Join.hook{
+    overflow: hidden;
+}
 
 .left-j{
     color: white;
@@ -24,6 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    position: relative;
 
 }
 .email-container{
@@ -48,3 +52,83 @@
     background-color: var(--orange);
     color: white;
 }
+
+.alert-container{
+    position: fixed;
+    top: -0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.795);
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.alert-container.open{
+    display: flex;
+}
+.alert-container>.msg-container{
+    background: var(--planCard);
+    margin: 0 2rem;
+    padding: 1rem 1.2rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    max-width: 40rem;
+    
+}
+
+.alert-container>.msg-container>.message-box{
+    font-weight: 200;
+    text-align: center;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.897);
+}
+
+.alert-container>.msg-container>.btn{
+    align-self: flex-end;
+    padding: .25rem .5rem;
+    /* font-size: .85rem; */
+}
+
+
+
+/* Responsive Start */
+@media screen and (max-width: 768px) {
+    .Join{
+        flex-direction: column;
+        gap: 1rem;
+        
+    }
+
+    .left-j{
+        font-size: x-large;
+        flex-direction: column;
+        text-align: center;
+    }
+    .right-j{
+        padding: 2rem;
+    }
+    .email-container{
+        gap: 0;
+        position: relative;
+        justify-content: center;
+    }
+
+    button.btn.btn-join{
+        font-size: small;
+        height: 5rem;
+    }
+
+    .email-container>button{
+        position: absolute;
+        top: 5rem;
+        padding: .5rem 1.5rem;
+    }
+}
+/* Responsive Ends */

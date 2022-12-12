@@ -1,5 +1,6 @@
 export const plansData = [
   {
+    id:"abc",
     icon: (
       <svg
         width="15"
@@ -14,11 +15,12 @@ export const plansData = [
     price: "25",
     features: [
       "2 hours of excercises",
-      "Free consultaion to coaches",
+      "Free consultation to coaches",
       "Access to The Community",
     ],
   },
   {
+    id:"def",
     icon: (
       <svg
         width="28"
@@ -33,11 +35,12 @@ export const plansData = [
     price: "30",
     features: [
       "5 hour of excercises",
-      "Free consultaion of Coaches",
+      "Free consultation of Coaches",
       "Accessto minibar",
     ],
   },
   {
+    id:"ghi",
     icon: (
       <svg
         width="16"
