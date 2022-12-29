@@ -11,7 +11,13 @@ const Join = () => {
     // Using EmailJS in the ReactApp
     const form = useRef()
     const [alertStatus, setAlertStatus] = useState({alertbox:"closed",errorMessage:"failure"})
-    const switchOff = ()=>{setAlertStatus({...alertStatus, alertbox:"closed", errorMessage:"failure"}); window.location.reload()}
+    const switchOff = ()=>{
+        setAlertStatus({
+            ...alertStatus, 
+            alertbox:"closed", 
+            errorMessage:"failure"
+        }); 
+        window.location.reload()}
     const sendEmail = (e) => {
         e.preventDefault();
     

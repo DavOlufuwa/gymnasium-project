@@ -10,6 +10,12 @@ const Header = () => {
     const mobile = window.innerWidth<= 786 ? true : false
     const [menuOpened, setMenuOpened] = useState(false)
 
+    // const refresh = () => {
+    //     if (mobile === true){
+    //         window.location.reload(false);
+    //     }
+    //   }
+
     return (
         <div className="header">
             {/* Mottos */}
@@ -19,7 +25,6 @@ const Header = () => {
                     style={{backgroundColor: 'var(--appColor)', padding:'0.56rem', borderRadius:'5px'}}
                     onClick = {()=>setMenuOpened(true)}
                 >
-                    
                     <img src={Bars} alt="" style={{width:"1.5rem", height:'1.5rem'}} />
                 </div>
             ) : (  
@@ -29,7 +34,7 @@ const Header = () => {
                         onClick={()=>setMenuOpened(false)}
                         activeClass="active" 
                         to='home'
-                        span={true} 
+                        span={"true"} 
                         smooth={true}>
                         Home
                     </Link>
@@ -38,7 +43,7 @@ const Header = () => {
                     <Link
                         onClick={()=>setMenuOpened(false)} 
                         to='programs'
-                        span={true} 
+                        span={"true"} 
                         smooth={true}>
                         Programs
                     </Link>
@@ -47,7 +52,7 @@ const Header = () => {
                     <Link
                         onClick={()=>setMenuOpened(false)} 
                         to='reasons'
-                        span={true} 
+                        span={"true"} 
                         smooth={true}>
                         Why us
                     </Link>
@@ -56,7 +61,7 @@ const Header = () => {
                     <Link
                         onClick={()=>setMenuOpened(false)} 
                         to='plans'
-                        span={true} 
+                        span={"true"} 
                         smooth={true}>
                         Plans
                     </Link>
@@ -65,7 +70,7 @@ const Header = () => {
                     <Link
                         onClick={()=>setMenuOpened(false)} 
                         to='testimonials'
-                        span={true} 
+                        span={"true"} 
                         smooth={true}>
                         Testimonials
                     </Link>

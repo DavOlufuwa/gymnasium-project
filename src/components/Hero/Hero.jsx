@@ -12,7 +12,7 @@ const Hero = () => {
   // motion step 1
   // define the state of the transitions
   const transition = {type:'spring', duration : 3}
-  const mobile = window.innerWidth<= 786 ? true : false
+  const mobile = window.innerWidth <= 786 ? true : false
 
   return (
     <div className='hero' id='home'>
