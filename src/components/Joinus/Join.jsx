@@ -17,13 +17,12 @@ const Join = () => {
             alertbox:"closed", 
             errorMessage:"failure"
         }); 
-        window.location.reload()}
+        document.getElementById("contact-form").reset()}
     const sendEmail = (e) => {
         e.preventDefault();
     
         emailjs.sendForm('service_glvbu1v', 'template_sieaqte', form.current, 'x9jmuUxk4g244i6Wi')
-          .then((result) => {
-              console.log(result.text);
+          .then(() => {
                 setAlertStatus({...alertStatus, alertbox:"opened", errorMessage:"success"})
           }, (error) => {
                 setAlertStatus({...alertStatus, alertbox:"opened",errorMessage:"failure"})
@@ -52,6 +51,7 @@ const Join = () => {
                 action="" 
                 className="email-container"
                 onSubmit={sendEmail}
+                id="contact-form"
             >
                 <input type="email" name="user_email" id="" placeholder='Enter your email address' required/>
                 <button className='btn btn-join'>Join Now</button>
